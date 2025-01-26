@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+  color: white;
+  background-color: rgb(0,0,0);
+  overflow-x: hidden;
+}
+
+p{
+  font-family: 'DM Mono', monospace;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+h1{
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+:root{
+  --bg-color: #141414;
+  --transition: all 400ms ease;
+  --gradient1: linear-gradient(270deg, #AF79FC 14.57%, #5D35F1 79.32%);
+  --gradient2: linear-gradient(270deg, #8DF8FF 14.57%, #5D35F1 79.32%);
+  --gradient3: linear-gradient(27deg, #8DF8FF 14.57%, #AF79FC 79.32%);
+
+
+
+}
+
+
+
+
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+/* NavBar */
+
+.navbar {
+  font-size: 20px;
+  padding:  1vw 35px;
+  position: absolute;
+  z-index: 2;
+}
+
+.navbar_list {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar_list a{
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+/* Menu Bar */
+
+.menu_button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 18px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 101;
+}
+
+.menu_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(15px);
+  z-index: 100;
+
+}
+
+.menu_ulist {
+  padding: 25px;
+  position: fixed;
+  top: 100px;
+  width: 230px;
+  z-index: 101;
+}
+
+.menu_list_item {
+  list-style: none;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 28px;
+
+}
+.menu_list_acm{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 100px;
+
+}
+.menu_list_discord{
+  list-style: none;
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 28px;
+
+}
+
+.menu_item {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Sponsor Carousel*/
+
+.carousel {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(250px * 16);
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  perspective: 100px;
+}
+
+.slide-img {
+  width: 100%;
+  transition: transform .5s;
+}
+
+.slide-img:hover {
+  transform: translateZ(20px);
+}
+
+.carousel::before,
+.carousel::after {
+  background: linear-gradient(to right, rgba(20, 20, 20, 1) 10%
+  , rgba(20, 20, 20, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 1;
+}
+
+.carousel::before {
+  left:0;
+  top: 0;
+}
+
+.carousel::after {
+  right:0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/* Expandable Cards */
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;  
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  line-height: 6vh;
+  width: 20rem;
+  padding: 2rem 2rem;
+  color: white;
+  background: rgba(24, 25, 26);
+  backdrop-filter: blur(15px);
+  box-shadow:
+  1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+  2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+  6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+  21px 37px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.frosted-card{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+}
+
+/* For Each Card's Swiper shadow Elements */
+.swiper-slide-shadow {
+  display: none !important;
+}
+
+.sig-p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.721);
+}
+.card img{
+  width: 50%;
+  height: 50%;
+}
+
+.card p{
+  text-align: center;
+  font-size: medium;
+  padding-top: 1rem;
+  line-height: 150%;
+}
+
+.expand {
+  height: 10rem;
+}
+
+.card-links{
+  width: 25%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-link-icon{
+  font-size: 20px;
+}
+
+.card-arrow-container{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.card-arrow{  
+  cursor: pointer;
+  height: 3vh;
+  width: 3vh;
+}
+
+/* SIGs */
+
+.sig-cards {
+  /* 75vh before */
+  height: var(--card-y-position);
+  display: flex;
+  justify-content: center;
+  gap: var(--sig-card-gap, 3rem);
+}
+
+/* Footer */
+
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-line {
+  font-size: .6rem;
+}
+
+@media (min-width: 768px) {
+  .footer-line {
+    font-size: .875rem;
+  }
+}
+
+.footer-socials{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Officers */
+
+.officer-img {
+    border-radius: 10%;
+    z-index: 1;
+    object-fit: cover;
+    display: inline;
+}
+
+.officer {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.officer-text{
+    font-size: 13px;
+    text-align:left;
+    display:inline;
+}
+
+.officer-text-0 {
+    width: 190px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.officer-text-centered-label {
+    display: flex;
+    justify-content: center;
+}
+
+.officer-arrow{
+    display:inline;
+    margin-left:50px;
+}
+
+/* Officer cards for swiper */
+
+.officerCard {  
+  width: 20em;
+  height: 24em;
+  padding: 2rem 2rem;
+  color: white;
+  background: var(--officer-card, rgba(32, 32, 32));
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow:
+    1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+    2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+    6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+    21px 37px 80px rgba(0, 0, 0, 0.07);
+  transition: 
+    background-color 0.1s ease,
+    width 0.1s ease,
+    height 0.1s ease,
+
+  ;
+}
+
+.officerMobile {
+  width: 16em;
+  height: 18em;
+  padding: 2rem 2rem;
+  color: white;
+  background: var(--officer-card, rgb(51, 51, 51));
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow:
+    1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+    2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+    6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+    21px 37px 80px rgba(0, 0, 0, 0.07);
+  transition: 
+    background-color 0.1s ease,
+    width 0.1s ease,
+    height 0.1s ease,
+
+  ;
+}
+
+.officerCard:hover {
+  background: rgb(41, 41, 41); /* Darker shade for hover state */
+}
+
+.flexDefault {
+  display: flex;
+}
+
+.flexMobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.officerCardBg {
+  background-image: url('./assets/sigsmesh.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.social-button{
+  transition-duration: .3s;
+}
+
+.social-button:hover{
+  opacity: .7;
+}
+
+
+.mesh-gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.fish-bg{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.title-bg{
+  position: absolute;
+  width: 120vh;
+  height: 120vw;
+  transform: rotate(16.65deg);
+  flex-shrink: 0;
+  background-color: #141414;
+  left: 0;
+  margin-left: -20vw;
+  margin-top: -30vh;
+  
+  
+  
+}
+
+.sig-bg-image {
+  background-image: url('./assets/sigsmesh1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-text{
+  position: relative;
+  color: #FFF;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .particles-background{
+    background: url('./assets/acmmesh.png') no-repeat center center;
+    background-size: cover;
+  }
+
+.title-text-container{
+  width: 35vw;
+  height: 50vh;
+  margin-left: 50px;
+  margin-top: 20vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.disc-text-container{
+  width: 40vw;
+  margin-left: 50px;
+  margin-top: 60vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.disc-text{
+  position: relative;
+}
+
+.arrow-container{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  margin-top: 35px;
+
+}
+
+.arrow-icon{
+
+  width: 50px;
+  height: 50px;
+  color: var(--gradient1);
+
+
+}
+
+
+.discord-btn {
+  padding: 15px 30px;
+  font-weight: 700;
+  width: 150px; 
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background: var(--gradient3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discord-btn::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px; 
+  bottom: 2px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+  transition: 400ms;
+  z-index: -1;
+}
+
+.discord-btn::after {
+  content: "Join Discord";
+  font-size: 16px;
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient3);
+  -webkit-background-clip: text;  
+  background-clip: text;
+  color: transparent;
+  transition: 400ms;
+  z-index: 2;
+}
+
+.discord-btn:hover::before {  
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.discord-btn:hover::after {
+  color: #fff;
+}
+
+.checkin-btn {
+  padding: 15px 30px;
+  font-weight: 700;
+  width: 120px; 
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkin-btn::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px; 
+  bottom: 2px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+  transition: 400ms;
+  z-index: -1;
+}
+
+.checkin-btn::after {
+  content: "Check-In";
+  font-size: 16px;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  -webkit-background-clip: text;  
+  background-clip: text;
+  color: transparent;
+  transition: 400ms;
+  z-index: 2;
+}
+
+.checkin-btn:hover::before {  
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.checkin-btn:hover::after {
+  color: #0e0e0e;
+}
+
+.fish{
+  width: 400px;
+  height: 120px;
+}
+
+.splash-container{ /*background for menu bar*/
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+}
+
+.gradient-text1{
+  background: var(--gradient1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text2{
+  background: var(--gradient3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text3{
+  background: var(--gradient2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+.countUpText{
+  font-family: 'DM Mono', monospace;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.linked-in{
+    font-size: 32px
+}
+
+
+/* This styles the scrollbar track*/
+::-webkit-scrollbar-track {
+  background: #18191A; /* Light grey background */
+}
+
+/* This styles the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Darker grey thumb */
+}
+
+/* Handle the scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Even darker grey on hover */
+}
+
+/* This styles the scrollbar itself */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+@media (max-width: 1100px) {
+  .title-bg{
+    width: 155vh;
+    height: 150vw;
+    margin-left: -30vw;
+    margin-top: 25vh;
+    
+  }
+
+  .title-text{
+    display: none;
+  }
+  .title-text-container{
+    width: 60vw;
+    height: 50vh;
+    margin-left: 20vw;
+    margin-top: 36vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 20l 60t */
+
+  .disc-text{
+    font-size: 25px;
+    text-align: center;
+  }
+  .disc-text-container{
+    width: 60vw;
+    margin-left: 50px;
+    margin-top: 60vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .disc-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-container{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: initial;
+    margin-top: 35px;
+    
+  }
+
+  .fish-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 20vh;
+  }
+
+  .fish-container img{
+    margin: 0;
+    align-self: center;
+    
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  .disc-text{
+    font-size: 20px;
+  }
+  .title-bg{
+    margin-top: 23vh;
+    margin-left: -36vh;
+  }
+
+  .title-text-container{
+    margin-top:35vh;
+    margin-left: 20vw;
+  }
+
+  
+
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .title-text-container{
+    margin-top:22vh;
+  }
+
+  .menu_list_acm{
+    margin-bottom: 50px;
+    margin-top: -40px;
+    
+  }
+  .fish{
+    width: 300px;
+    height: 90px;
+
+  }
+
+
+} 
+
+@media (max-height: 700px) {
+
+
+  .title-bg{
+    width: 180vh;
+    height: 180vw;
+  }
+  
+
+
+
+} 
+
+
+.arrow-icon {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
