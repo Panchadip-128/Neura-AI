@@ -14,8 +14,6 @@
     "amqplib": "^0.10.5",
     "axios": "^1.7.5",
     "caniuse-lite": "^1.0.30001692",
-    "firebase": "^10.14.1",
-    "firestore": "^1.1.6",
     "framer-motion": "^11.0.14",
     "material": "^0.9.15",
     "react": "^18.3.1",

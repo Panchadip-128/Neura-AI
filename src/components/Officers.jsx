@@ -266,7 +266,7 @@ function Officers() {
                                 <div className='flex flex-col items-center p-4'>
                                     <div className={officerClass}>
                                         <div className="flex flex-col items-center">
-                                            <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
+                                            <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-md object-cover mb-4'/>
                                             <h2 className='text-md sm:text-2xl text-white text-center'>{officer.name}</h2>
                                             <a href={officer.linkedin} target="_blank" className='text-4x hover:scale-110 linked-in duration-300 mt-2 p-2'>
                                                     <FaLinkedin/>
