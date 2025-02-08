@@ -7,6 +7,7 @@ const FAQ = () => {
         { question: "What is this website about?", answer: "This website provides information about our organization and its activities." },
         { question: "How can I join?", answer: "You can join by signing up on our website or contacting us through the form below." },
         { question: "Who are the organizers?", answer: "Our team consists of dedicated professionals and students passionate about technology and learning." },
+        { question: "What if we have technical doubts after events?", answer: "Our team will float a Google form for doubt clarification right after the event." }
     ];
 
     const [openIndex, setOpenIndex] = useState(null);

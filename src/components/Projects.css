@@ -1,0 +1,67 @@
+/* Ensures arrow buttons are styled properly */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 24px;
+    color: white;
+}
+
+/* Custom arrow styling */
+.custom-arrow {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(188, 4, 4);
+    color: white;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.custom-arrow:hover {
+    background: rgba(49, 0, 0, 0.8);
+}
+
+/* Adjusts spacing for smooth alignment */
+.carousel .slick-list {
+    padding: 0 20px; /* Reduced padding for better alignment */
+}
+
+/* Ensures equal-sized slides */
+.carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 320px; /* Uniform height for consistency */
+}
+
+/* Wraps slides for equal sizing */
+.slick-slide > div {
+    min-height: 100%;
+}
+
+/* Card styling with 3D effect */
+.project-card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    perspective: 1000px; /* Adds depth */
+    width: 280px;
+    height: 300px;
+}
+
+/* 3D hover effect */
+.project-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+/* Adjusts arrows positioning */
+.slick-prev {
+    left: -50px !important;
+}
+
+.slick-next {
+    right: -50px !important;
+}

@@ -33,7 +33,7 @@ const CountUp = ({ start = 0, end, className, prefix = '', suffix = '', formatNu
 
       animationTimeout = setTimeout(() => {
         controls.start({ opacity: 1, y: 0, transition: { duration } });
-        const counter = setInterval(() => {
+        setInterval(() => {
           setDisplayNumber(changeFunction);
         }, countSpeed);
       }, 300);
