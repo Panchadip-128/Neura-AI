@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [shake, setShake] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -9,47 +11,68 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!formData.name || !formData.email || !formData.message) {
+            setShake(true);
+            setTimeout(() => setShake(false), 500);
+            return;
+        }
         console.log("Form Data Submitted:", formData);
         alert("Thank you for contacting us!");
         setFormData({ name: "", email: "", message: "" });
     };
 
     return (
-        <div className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md">
-            <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-                <input
+        <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="max-w-lg mx-auto p-8 bg-gray-900 text-white shadow-lg rounded-lg"
+        >
+            <h2 className="text-3xl font-bold text-center mb-6 text-blue-400">Contact Us</h2>
+            <motion.form
+                onSubmit={handleSubmit}
+                className={`space-y-6 ${shake ? "animate-shake" : ""}`}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+                <motion.input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
-                    className="w-full p-3 border rounded"
-                    required
+                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
+                    whileFocus={{ scale: 1.05 }}
                 />
-                <input
+                <motion.input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email"
-                    className="w-full p-3 border rounded"
-                    required
+                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
+                    whileFocus={{ scale: 1.05 }}
                 />
-                <textarea
+                <motion.textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Your Message"
                     rows="4"
-                    className="w-full p-3 border rounded"
-                    required
-                ></textarea>
-                <button type="submit" className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-700">
+                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
+                    whileFocus={{ scale: 1.05 }}
+                ></motion.textarea>
+                <motion.button
+                    type="submit"
+                    className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-110 active:scale-95"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
                     Send Message
-                </button>
-            </form>
-        </div>
+                </motion.button>
+            </motion.form>
+        </motion.div>
     );
 };
 
