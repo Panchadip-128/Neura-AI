@@ -243,7 +243,7 @@ function Officers() {
         <div className='officerCardBg'>
             <div className={containerClass}>
                 <div style={mobileInfoStyle} className="bg-[#0000008e] sm:w-1/2 flex-col items-center justify-center">
-                    <h1 className="text-center text-white text-4xl py-8">Meet The Officers</h1>
+                    <h1 className="text-center text-white text-4xl py-8">Meet The Team</h1>
                     <div className="text-center">
                             <h2 className="text-5xl gradient-text2 p-3">{activeOfficer.name}</h2>
                             <p className="text-3xl gradient-text1 p-3">{activeOfficer.position}</p>

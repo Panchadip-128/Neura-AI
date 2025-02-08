@@ -7,7 +7,7 @@ import SponsorCarousel from './components/SponsorCarousel';
 import SIGs from './components/SIGs';
 import Footer from './components/Footer';
 import Officers from './components/Officers';
-import MBOSCLogo from './Neura_ai-hor5-removebg-preview.png';
+import NeuraLogo from './Neura_ai-hor5-removebg-preview.png';
 import { useEffect, useState } from 'react';
 
 function Landing() {
@@ -32,7 +32,7 @@ function Landing() {
     <div>
         <div className='splash-container' id='home'>
           {isSmall && <span className='fish-conatiner'>
-             <img src={MBOSCLogo} alt='ACM' className='fish'/>
+             <img src={NeuraLogo} alt='neura' className='fish'/>
           </span>}
           
           <TitlePane/>
@@ -41,7 +41,7 @@ function Landing() {
         <Home/>
         <About/> 
         <Officers/>
-        <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
+        <h1 id='sponsors' className='flex justify-center p-4'>Upcoming Events</h1>
         <SponsorCarousel id='sponsors'/>
         <SIGs id='sigs'/>
         <Footer/>
