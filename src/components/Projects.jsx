@@ -30,7 +30,7 @@ const CustomArrow = ({ direction, onClick }) => {
   return (
     <div
       className={`absolute top-1/2 transform -translate-y-1/2 ${
-        direction === "next" ? "right-1" : "left-"
+        direction === "next" ? "right-1" : "left-1"
       } z-10 p-3 bg-[#000000] hover:bg-[#A0522D] text-white rounded-full cursor-pointer shadow-md flex items-center justify-center w-10 h-10`} // Changed background color and hover effects
       onClick={onClick}
       style={{ display: "block" }} // Ensure arrows are always displayed
@@ -73,8 +73,8 @@ const Projects = () => {
       <div className="relative">
         <Slider {...settings} className="flex justify-center">
           {projects.map((project, index) => (
-            <motion.div key={index} className="flex justify-center px-4 sm:ml-8 sm:w-72 ml-4"> {/* Added margin-left */}
-              <div className="w-80 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col sm:w-72 sm:h-80"> {/* Adjust width and height for responsive screens */}
+            <motion.div key={index} className="flex justify-center px-4 sm:px-12"> {/* Increased padding */}
+              <div className="w-80 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col sm:w-80 sm:h-96"> {/* Adjust width and height for responsive screens, added shadow-lg */}
                 <img
                   src={project.thumbnail}
                   alt={project.title}

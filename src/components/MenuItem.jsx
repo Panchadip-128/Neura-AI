@@ -40,7 +40,7 @@ export const MenuItem = ({ item, toggleOpen }) => {
       whileTap={{ scale: 0.95 }}
       onClick={handleClick}
     >
-      <span className="relative group block px-4 py-2">
+      <span className="relative group block px-4 py-2" style={{ fontSize: '18px', lineHeight: '0.8' }}> {/* Set font size and line height in numbers */}
         {item.text}
         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
       </span>
