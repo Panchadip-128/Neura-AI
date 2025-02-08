@@ -54,7 +54,7 @@ function Landing() {
             <Home />
             <About />
             <Officers />
-            <h1 id='sponsors' className='flex justify-center p-4'>Upcoming Events</h1>
+            <h1 id='sponsors' className='text-center p-4'>Upcoming Events</h1>
             <SponsorCarousel id='sponsors' />
             <SIGs id='sigs' />
 

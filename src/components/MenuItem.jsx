@@ -18,14 +18,12 @@ const variants = {
   }
 };
 
-function ScrollSection(elementId) {
+const ScrollSection = (elementId) => {
   const element = document.getElementById(elementId);
   if (element) {
-      element.scrollIntoView({ block: "start", behavior: "smooth" });
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
-}
-
-
+};
 
 export const MenuItem = ({ item, toggleOpen }) => {
   const handleClick = () => {
@@ -35,12 +33,17 @@ export const MenuItem = ({ item, toggleOpen }) => {
 
   return (
     <motion.li
-      className="menu_list_item"
+      className="menu_list_item mb-6 text-white text-lg font-semibold relative cursor-pointer transition-all duration-300"
       variants={variants}
-      whileHover={{ scale: 1.1 }}
+      // Apply a boxShadow on hover for a glow effect
+      whileHover={{ boxShadow: "0px 0px 8px 2px #38bdf8" }}
       whileTap={{ scale: 0.95 }}
+      onClick={handleClick}
     >
-      <span className="menu_item" onClick={handleClick}>{item.text}</span>
+      <span className="relative group block px-4 py-2">
+        {item.text}
+        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+      </span>
     </motion.li>
   );
 };

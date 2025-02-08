@@ -3,9 +3,9 @@ import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     const socials = [
-        { text: "discord", link: "https://discord.gg/wcYxbcgbVN", fa: <FaWhatsapp /> },
-        { text: "linkedin", link: "https://www.linkedin.com/company/ufacm/", fa: <FaLinkedin /> },
-        { text: "instagram", link: "https://www.instagram.com/uf.acm/", fa: <FaInstagram /> },
+        { text: "discord", link: "https://chat.whatsapp.com/CthdcrweQat21qTLxRDJ63", fa: <FaWhatsapp /> },
+        { text: "linkedin", link: "https://www.linkedin.com/company/neura-ai/posts/", fa: <FaLinkedin /> },
+        { text: "instagram", link: "https://www.instagram.com/neura.mitblr/", fa: <FaInstagram /> },
     ];
 
     return (

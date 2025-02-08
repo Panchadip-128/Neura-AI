@@ -658,8 +658,8 @@ h3{
 }
 
 .discord-btn::after {
-  content: "Join Discord";
-  font-size: 16px;
+  content: "Industry Conclave";
+  font-size: 12px;
   position: absolute;
   top: 12px;
   left: 24px;
@@ -671,6 +671,7 @@ h3{
   color: transparent;
   transition: 400ms;
   z-index: 2;
+  
 }
 
 .discord-btn:hover::before {  

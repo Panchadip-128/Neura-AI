@@ -8,26 +8,25 @@ const variants = {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
   },
   closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    }
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
 };
 
 const menuItems = [
-    { text: "Home", id: "home" },
-    { text: "About", id: "about" },
-    { text: "Sponsors", id: "sponsors" },
-    { text: "Events", id: "sigs" },
-    { text: "FAQs", id: "faqs" },  // Added FAQs item
-    { text: "Contact", id: "contact" } // Added Contact item
+  { text: "Home", id: "home" },
+  { text: "About", id: "about" },
+  { text: "Sponsors", id: "sponsors" },
+  { text: "Events", id: "sigs" },
+  { text: "FAQs", id: "faqs" },  // Added FAQs item
+  { text: "Contact", id: "contact" } // Added Contact item
 ];
 
 export const Navigation = ({ toggleOpen }) => (
   <motion.ul className="menu_ulist" variants={variants}>
     {menuItems.map((item) => (
-      <MenuItem item={item} key={item.text} toggleOpen={toggleOpen} />
+      <MenuItem item={item} key={item.text} toggleOpen={toggleOpen} className="text-xs" />
     ))}
+    {/* Reduced font size */}
     <MenuDiscordBtn />
   </motion.ul>
 );
-
-

@@ -29,7 +29,7 @@ function About() {
         <div id='ACMstats' className='flex justify-evenly align-center py-11'>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={2000} className="countUpText gradient-text1 sm:text-5xl" end={2014}/>
+              <CountUp start={2000} className="countUpText gradient-text1 sm:text-5xl" end={2021}/>
               <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Established in</motion.p>
             </div>
           </div>
@@ -38,7 +38,7 @@ function About() {
               <CountUp start={75} end={1} className="countUpText gradient-text2 sm:text-5xl" prefix='#'/>
               <div className='flex justify-center'>
                 <div className='w-1/2'>
-                <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-xs sm:text-lg md:text-xl pt-3">Largest UF Computing Organization</motion.p>
+                <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-xs sm:text-lg md:text-xl pt-3">Largest MIT-B Tech Club</motion.p>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ function About() {
           <div className="flex-col">
             <div className="text-center">
               <CountUp start={750} end={2100} className="countUpText gradient-text3 sm:text-5xl" formatNumber={true} suffix="+"/>
-              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Virtual Members</motion.p>
+              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Active Members</motion.p>
             </div>
           </div>
         </div>

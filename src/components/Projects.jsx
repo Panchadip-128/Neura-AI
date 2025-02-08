@@ -8,8 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 // Import about2.jpg from src/assets
 import about2 from "../assets/about2.jpg";
 
-// Reference the headshot image from the public folder
-const normanHeadshot = "/images/headshots/Norman+Headshot.jpg";
 
 const projects = [
   {
@@ -24,7 +22,7 @@ const projects = [
     description: "A machine learning model for predictive analysis.",
     tags: ["ML", "Predictive Analysis"],
     githubLink: "https://github.com/user/ml-predictive-analysis",
-    thumbnail: normanHeadshot, // Image from public folder
+    thumbnail: about2, 
   },
 ];
 
@@ -32,8 +30,8 @@ const CustomArrow = ({ direction, onClick }) => {
   return (
     <div
       className={`absolute top-1/2 transform -translate-y-1/2 ${
-        direction === "next" ? "right-4" : "left-4"
-      } z-10 p-3 bg-gray-800 hover:bg-gray-600 text-white rounded-full cursor-pointer shadow-md flex items-center justify-center w-10 h-10`}
+        direction === "next" ? "right-1" : "left-"
+      } z-10 p-3 bg-[#000000] hover:bg-[#A0522D] text-white rounded-full cursor-pointer shadow-md flex items-center justify-center w-10 h-10`} // Changed background color and hover effects
       onClick={onClick}
       style={{ display: "block" }} // Ensure arrows are always displayed
     >
@@ -75,7 +73,7 @@ const Projects = () => {
       <div className="relative">
         <Slider {...settings} className="flex justify-center">
           {projects.map((project, index) => (
-            <motion.div key={index} className="flex justify-center px-4 sm:ml-8 sm:w-72"> {/* Add margin-left and adjust width for responsive screens */}
+            <motion.div key={index} className="flex justify-center px-4 sm:ml-8 sm:w-72 ml-4"> {/* Added margin-left */}
               <div className="w-80 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col sm:w-72 sm:h-80"> {/* Adjust width and height for responsive screens */}
                 <img
                   src={project.thumbnail}

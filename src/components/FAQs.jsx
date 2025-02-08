@@ -55,7 +55,7 @@ const FAQ = () => {
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             className="overflow-hidden bg-white dark:bg-gray-900"
                         >
-                            <p className="p-4 text-gray-700 dark:text-gray-300">{faq.answer}</p>
+                            <p className="p-4 text-sm text-gray-700 dark:text-gray-300">{faq.answer}</p> {/* Applied extra small font size */}
                         </motion.div>
                     </motion.div>
                 ))}
