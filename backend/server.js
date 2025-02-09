@@ -10,20 +10,20 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post('/send-email', (req, res) => {
+app.post('/api/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'panchadip128@gmail.com',
-      pass: 'hvkp rdrt mrdo cduq',
+      user: 'panchadip128@gmail.com', // Replace with your email
+      pass: 'hvkp rdrt mrdo cduq', // Replace with your email password
     },
   });
 
   const mailOptions = {
     from: email,
-    to: 'your-email@gmail.com',
+    to: 'your-email@gmail.com', // Replace with your email
     subject: `New Contact Form Submission from ${name}`,
     text: `You have a new contact form submission:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
@@ -39,3 +39,5 @@ app.post('/send-email', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+module.exports = app;
