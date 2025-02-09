@@ -29,7 +29,7 @@ function Landing() {
         // Simulating a loading effect
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 500); // Adjust time as needed
+        }, 100); // Adjust time as needed
 
         return () => {
             window.removeEventListener('resize', handleResize);
