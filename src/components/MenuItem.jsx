@@ -30,8 +30,8 @@ export const MenuItem = ({ item, toggleOpen }) => {
     <motion.li
       className="menu_list_item mb-6 text-white font-semibold relative cursor-pointer transition-all duration-300 overflow-hidden rounded-[20px]"
       style={{
-        fontSize: "18px",
-        lineHeight: "1.2",
+        fontSize: "15px",
+        lineHeight: "0.8",
         padding: "12px 16px",
         width: "100%",
         boxSizing: "border-box",
