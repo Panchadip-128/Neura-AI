@@ -9,14 +9,27 @@ const ContactForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!formData.name || !formData.email || !formData.message) {
             setShake(true);
             setTimeout(() => setShake(false), 500);
             return;
         }
-        console.log("Form Data Submitted:", formData);
+
+        await fetch('https://api.useplunk.com/v1/send', {
+            method: 'POST',
+            body: JSON.stringify({
+                to: "panchadip125@gmail.com",
+                subject: `NeuraAI Contact Form Message`,
+                body: `Name: ${formData.name} | Email:  ${formData.email} | Message: ${formData.message}`
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer sk_b4eed4c94a1818a80f7f0ae63d0ad58fea9f6bccfe693b06',
+            },
+        });
+
         alert("Thank you for contacting us!");
         setFormData({ name: "", email: "", message: "" });
     };
