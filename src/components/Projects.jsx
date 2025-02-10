@@ -35,8 +35,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <motion.div className="max-w-4xl mx-auto p-10 bg-gradient-to-tl from-[#0f4e44] to-[#070015] shadow-lg">
-      <motion.h1 className="text-3xl font-bold text-center mb-6 text-white">
+<motion.div className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-10 bg-gradient-to-tl from-[#0f4e44] to-[#070015] shadow-lg">
+<motion.h1 className="text-3xl font-bold text-center mb-6 text-white">
         Projects Showcase
       </motion.h1>
       <div className="relative">

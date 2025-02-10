@@ -18,8 +18,7 @@ const FAQ = () => {
 
     return (
         <motion.div 
-            className="max-w-3xl mx-auto p-6 bg-gradient-to-br from-[#0f4e44] to-[#070015] shadow-lg"
-            initial={{ opacity: 0 }}
+        className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-8 bg-gradient-to-br from-[#0f4e44] to-[#070015] shadow-lg"            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >

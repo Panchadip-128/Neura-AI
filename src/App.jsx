@@ -4,6 +4,8 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen'; // ✅ Correct path
 
+
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
