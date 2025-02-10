@@ -32,7 +32,7 @@ export const MenuItem = ({ item, toggleOpen }) => {
       style={{
         fontSize: "15px",
         lineHeight: "0.8",
-        padding: "12px 16px",
+        padding: "8px 14px",
         width: "100%",
         boxSizing: "border-box",
         position: "relative",
