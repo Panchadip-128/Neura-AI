@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa"; // Import Instagram icon
 import 'swiper/css/pagination';
 
 function Officers() {
@@ -13,6 +13,7 @@ function Officers() {
             name: "Norman Bukingolts",
             position: "President",
             linkedin: "https://www.linkedin.com/in/norman-codes/",
+            instagram: "https://www.instagram.com/neura.mitblr/", // Add Instagram link
             imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
             bio: "M.S. in AI Systems '26, University of Florida",
         },
@@ -20,6 +21,7 @@ function Officers() {
             name: "Alexander Klein",
             position: "Internal Vice President",
             linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
+            instagram: "https://www.instagram.com/alexander.klein.cs/", // Add Instagram link
             imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
             bio: "Incoming Solutions Engineer @ Deloitte, Former Software Engineer Intern @ Akima",
         },
@@ -27,6 +29,7 @@ function Officers() {
             name: "Surya Karthikeyan Vijayalakshmi",
             position: "External Vice President",
             linkedin: "https://www.linkedin.com/in/kvsurya/",
+            instagram: "https://www.instagram.com/kvsurya/", // Add Instagram link
             imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
             bio: "Director of Web Development @ University of Florida Homecoming and Gator Growl",
         },
@@ -34,6 +37,7 @@ function Officers() {
             name: "Jacob Hoppenstedt",
             position: "Secretary",
             linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
+            instagram: "https://www.instagram.com/jacob.hoppenstedt/", // Add Instagram link
             imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
             bio: "Former Software Development Engineer Intern @ Publix",
         },
@@ -41,6 +45,7 @@ function Officers() {
             name: "Connor Munjed",
             position: "Treasurer",
             linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
+            instagram: "https://www.instagram.com/connor.munjed/", // Add Instagram link
             imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
             bio: "Former Software Engineer Intern @ FIS Global",
         },
@@ -48,6 +53,7 @@ function Officers() {
             name: "Anteneh Zewdie",
             position: "Marketing Lead",
             linkedin: "https://www.linkedin.com/in/antenehzewdie/",
+            instagram: "https://www.instagram.com/anteneh.zewdie/", // Add Instagram link
             imgSrc: require('../assets/headshots/Anteneh+Headshot.jpg'),
             bio: "Former Software Engineer Intern @ Prevent Overdose Inc.",
         },
@@ -55,6 +61,7 @@ function Officers() {
             name: "Jack Crew",
             position: "VP of Professional Affairs",
             linkedin: "https://www.linkedin.com/in/jack-crew/",
+            instagram: "https://www.instagram.com/jack.crew/", // Add Instagram link
             imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
             bio: "Former Business Development Intern @ TaskUs",
         },
@@ -62,6 +69,7 @@ function Officers() {
             name: "Alexander Fisher",
             position: "Workshop Lead",
             linkedin: "https://www.linkedin.com/in/alexander-fisher-00209828a/",
+            instagram: "https://www.instagram.com/alexander.fisher/", // Add Instagram link
             imgSrc: require('../assets/headshots/Fisher+Headshot.jpg'),
             bio: "Incoming Software Engineer Intern @ BNY",
         },
@@ -69,6 +77,7 @@ function Officers() {
             name: "Kovidh Gandreti",
             position: "Workshop Lead",
             linkedin: "https://www.linkedin.com/in/kovidhgandreti/",
+            instagram: "https://www.instagram.com/kovidh.gandreti/", // Add Instagram link
             imgSrc: require('../assets/headshots/Kovidh+Headshot.jpg'),
             bio: "Former Software Engineer Intern @ Lockheed Martin Aeronautics",
         },
@@ -76,6 +85,7 @@ function Officers() {
             name: "Diego Alvarez d Jesus",
             position: "Social Lead",
             linkedin: "https://www.linkedin.com/in/dalvarezdejesus/",
+            instagram: "https://www.instagram.com/diego.alvarez.de.jesus/", // Add Instagram link
             imgSrc: require('../assets/headshots/Diego+Headshot.jpg'),
             bio: "Former Software Engineer Intern @ Northrop Grumman",
         },
@@ -83,6 +93,7 @@ function Officers() {
             name: "Rashi Goyal",
             position: "Operations & Logistics Head",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/rashi.goyal/", // Add Instagram link
             imgSrc: require('../assets/headshots/RashiG_Neura.png'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -90,6 +101,7 @@ function Officers() {
             name: "Tanay Sanjay",
             position: "Media Team",
             linkedin: "https://www.linkedin.com/in/jasontenczar/",
+            instagram: "https://www.instagram.com/tanay.sanjay/", // Add Instagram link
             imgSrc: require('../assets/headshots/Tsm (2).jpg'),
             bio: "Former Software Engineer Intern @ Integris Group",
         },
@@ -97,6 +109,7 @@ function Officers() {
             name: "Arnav Agarwal",
             position: "Operations & Logistics Head",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/arnav.agarwal/", // Add Instagram link
             imgSrc: require('../assets/headshots/Arnav_Media.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -104,6 +117,7 @@ function Officers() {
             name: "Shreya Rastogi",
             position: "Operations & Logistics Head",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/shreya.rastogi/", // Add Instagram link
             imgSrc: require('../assets/headshots/ShreyaR.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -111,6 +125,7 @@ function Officers() {
             name: "Bhavika",
             position: "Marketing Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/bhavika/", // Add Instagram link
             imgSrc: require('../assets/headshots/Bhavika.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -118,6 +133,7 @@ function Officers() {
             name: "Sashia Tuli",
             position: "Marketing Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/sashia.tuli/", // Add Instagram link
             imgSrc: require('../assets/headshots/Sashia.png'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -125,6 +141,7 @@ function Officers() {
             name: "Samaira Malik",
             position: "Marketing Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/samaira.malik/", // Add Instagram link
             imgSrc: require('../assets/headshots/Samaira.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -132,6 +149,7 @@ function Officers() {
             name: "Riddhi P",
             position: "Marketing Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/riddhi.p/", // Add Instagram link
             imgSrc: require('../assets/headshots/Riddhi.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -139,20 +157,16 @@ function Officers() {
             name: "Aaditya Khopade",
             position: "Marketing Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/aaditya.khopade/", // Add Instagram link
             imgSrc: require('../assets/headshots/adityaK.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
-        {
-            name: "Livana Datta",
-            position: "Marketing Team",
-            linkedin: "https://www.linkedin.com/in/newbold-kevin/",
-            imgSrc: require('../assets/headshots/adityaK.jpg'),
-            bio: "Former Software Engineer Intern @ DS2",
-        },
+        
         {
             name: "Livana Datta",
             position: "Operations & Logistics Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/livana.datta/", // Add Instagram link
             imgSrc: require('../assets/headshots/Livana.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -160,6 +174,7 @@ function Officers() {
             name: "Adithi Jahnavi",
             position: "Web Development Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/adithi.jahnavi/", // Add Instagram link
             imgSrc: require('../assets/headshots/Adithi.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -167,6 +182,7 @@ function Officers() {
             name: "Aryan Jha",
             position: "Operations & Logistics Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            instagram: "https://www.instagram.com/aryan.jha/", // Add Instagram link
             imgSrc: require('../assets/headshots/Aryan.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
         },
@@ -221,9 +237,14 @@ function Officers() {
                                         <div className="flex flex-col items-center">
                                             <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-md object-cover mb-2' /> {/* Reduced margin-bottom */}
                                             <h2 className='text-md sm:text-2xl text-white text-center'>{officer.name}</h2>
-                                            <a href={officer.linkedin} target="_blank" rel="noreferrer" className='text-4x hover:scale-110 linked-in duration-300 mt-2 p-2'>
-                                                <FaLinkedin />
-                                            </a>
+                                            <div className="flex space-x-2 mt-2">
+                                                <a href={officer.linkedin} target="_blank" rel="noreferrer" className='text-4x hover:scale-110 linked-in duration-300 p-2'>
+                                                    <FaLinkedin className="text-2xl" />
+                                                </a>
+                                                <a href={officer.instagram} target="_blank" rel="noreferrer" className='text-4x hover:scale-110 instagram duration-300 p-2'>
+                                                    <FaInstagram className="text-2xl" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

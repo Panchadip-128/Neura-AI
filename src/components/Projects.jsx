@@ -7,6 +7,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { FaGithub } from "react-icons/fa"; // Import the GitHub icon
 import about2 from "../assets/about2.jpg";
 
 const projects = [
@@ -35,8 +36,8 @@ const projects = [
 
 const Projects = () => {
   return (
-<motion.div className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-10 bg-gradient-to-tl from-[#0f4e44] to-[#070015] shadow-lg">
-<motion.h1 className="text-3xl font-bold text-center mb-6 text-white">
+    <motion.div className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-10 bg-gradient-to-tl from-[#0f4e44] to-[#070015] shadow-lg">
+      <motion.h1 className="text-3xl font-bold text-center mb-6 text-white">
         Projects Showcase
       </motion.h1>
       <div className="relative">
@@ -88,9 +89,9 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-2 rounded-lg shadow hover:from-green-500 hover:to-blue-600 transition duration-300 text-sm"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-2 rounded-lg shadow hover:from-green-500 hover:to-blue-600 transition duration-300 text-sm"
                   >
-                    View on GitHub
+                    View on GitHub <FaGithub className="inline ml-2" />
                   </a>
                 </div>
               </div>

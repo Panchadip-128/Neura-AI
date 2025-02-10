@@ -35,9 +35,11 @@ function Footer() {
                     title="Google Maps"
                 ></iframe>
             </div>
-            <div className="footer-copyright text-center">
-                <p className="text-xs">&copy; {new Date().getFullYear()} Neura AI Tech Team. All rights reserved.</p>
-            </div>
+            <footer class="footer">
+                <p class="text-xs">
+                    &copy; <script>document.write(new Date().getFullYear());</script> Neura AI Tech Team. All rights reserved.
+                </p>
+             </footer>
         </div>
     );
 }
