@@ -26,9 +26,9 @@ const ContactForm = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="max-w-lg mx-auto p-8 bg-gray-900 text-white shadow-lg rounded-lg"
+            className="max-w-lg mx-auto p-8 bg-gradient-to-b from-[#091320] to-[#080d1d] text-white shadow-lg rounded-lg"
         >
-            <h2 className="text-3xl font-bold text-center mb-6 text-blue-400">Contact Us</h2>
+            <h2 className="text-3xl font-bold text-center mb-6 text-white">Contact Us</h2>
             <motion.form
                 onSubmit={handleSubmit}
                 className={`space-y-6 ${shake ? "animate-shake" : ""}`}
@@ -36,31 +36,35 @@ const ContactForm = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                <motion.input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
-                    whileFocus={{ scale: 1.05 }}
-                />
-                <motion.input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Your Email"
-                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
-                    whileFocus={{ scale: 1.05 }}
-                />
+                <motion.div
+                    className="flex flex-col md:flex-row md:space-x-4"
+                >
+                    <motion.input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your Name"
+                        className="w-full p-3 bg-[#fffde1] border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105 mb-4 md:mb-0"
+                        whileFocus={{ scale: 1.05 }}
+                    />
+                    <motion.input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Your Email"
+                        className="w-full p-3 bg-[#fffde1] border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
+                        whileFocus={{ scale: 1.05 }}
+                    />
+                </motion.div>
                 <motion.textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Your Message"
                     rows="4"
-                    className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
+                    className="w-full p-3 bg-[#fffde1] border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105"
                     whileFocus={{ scale: 1.05 }}
                 ></motion.textarea>
                 <motion.button

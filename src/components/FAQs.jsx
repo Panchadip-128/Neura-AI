@@ -41,7 +41,7 @@ const FAQ = () => {
                         transition={{ duration: 0.5, delay: index * 0.2 }}
                     >
                         <button
-                            className="w-full flex justify-between items-center text-lg font-semibold p-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition duration-300"
+                            className="w-full flex justify-between items-center text-lg font-semibold p-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition duration-300 text-left"
                             onClick={() => toggleFAQ(index)}
                         >
                             {faq.question}
@@ -55,7 +55,7 @@ const FAQ = () => {
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             className="overflow-hidden bg-white dark:bg-gray-900"
                         >
-                            <p className="p-4 text-sm text-gray-700 dark:text-gray-300">{faq.answer}</p> {/* Applied extra small font size */}
+                            <p className="p-4 text-sm text-gray-700 dark:text-gray-300 text-left">{faq.answer}</p> {/* Applied extra small font size */}
                         </motion.div>
                     </motion.div>
                 ))}

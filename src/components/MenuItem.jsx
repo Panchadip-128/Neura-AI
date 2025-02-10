@@ -1,49 +1,57 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-const variants = {
-  open: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 1000, velocity: -100 }
-    }
+// Variants for the outer menu item (scale and glow effect)
+const menuItemVariants = {
+  rest: { scale: 1, boxShadow: "none" },
+  hover: { 
+    scale: 1.05, 
+    boxShadow: "0px 0px 8px 2px #38bdf8",
+    transition: { duration: 0.3 },
+    borderRadius: "20px",
   },
-  closed: {
-    y: 50,
-    opacity: 0,
-    transition: {
-      y: { stiffness: 1000 }
-    }
-  }
-};
-
-const ScrollSection = (elementId) => {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.scrollIntoView({ block: "start", behavior: "smooth" });
-  }
 };
 
 export const MenuItem = ({ item, toggleOpen }) => {
   const handleClick = () => {
-    ScrollSection(item.id);
-    toggleOpen(); // Close the menu
+    // Scroll to the corresponding section (if needed)
+    const element = document.getElementById(item.id);
+    if (element) {
+      element.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+        inline: "nearest",
+      });
+    }
+    toggleOpen(); // Close the menu after clicking
   };
 
   return (
     <motion.li
-      className="menu_list_item mb-6 text-white text-lg font-semibold relative cursor-pointer transition-all duration-300"
-      variants={variants}
-      // Apply a boxShadow on hover for a glow effect
-      whileHover={{ boxShadow: "0px 0px 8px 2px #38bdf8" }}
-      whileTap={{ scale: 0.95 }}
+      className="menu_list_item mb-6 text-white font-semibold relative cursor-pointer transition-all duration-300 overflow-hidden rounded-[20px]"
+      style={{
+        fontSize: "18px",
+        lineHeight: "1.2",
+        padding: "12px 16px",
+        width: "100%",
+        boxSizing: "border-box",
+        position: "relative",
+      }}
+      initial="rest"
+      whileHover="hover"
+      whileTap="hover"
+      variants={menuItemVariants}
       onClick={handleClick}
     >
-      <span className="relative group block px-4 py-2" style={{ fontSize: '18px', lineHeight: '0.8' }}> {/* Set font size and line height in numbers */}
+      {/* Background fill element that expands only on hover */}
+      <div className="background-fill"></div>
+      
+      {/* Menu item text (remains on top) */}
+      <span className="relative block" style={{ zIndex: 1 }}>
         {item.text}
-        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
       </span>
     </motion.li>
   );
 };
+
+export default MenuItem;

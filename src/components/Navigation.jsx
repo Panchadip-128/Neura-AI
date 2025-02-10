@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
-import { MenuDiscordBtn } from "./MenuDiscordBtn";
+import { MenuWhatsAppBtn } from "./Menu_Whatsapp";
 
 const variants = {
   open: {
@@ -27,6 +27,6 @@ export const Navigation = ({ toggleOpen }) => (
       <MenuItem item={item} key={item.text} toggleOpen={toggleOpen} className="text-xs" />
     ))}
     {/* Reduced font size */}
-    <MenuDiscordBtn />
+    <MenuWhatsAppBtn/>
   </motion.ul>
 );
