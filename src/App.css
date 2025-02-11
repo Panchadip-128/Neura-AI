@@ -710,6 +710,7 @@ h3{
   color: transparent;
   transition: 400ms;
   z-index: 2;
+  padding:2px;
   
 }
 
@@ -802,8 +803,8 @@ h3{
 }
 
 .checkin-btn::after {
-  content: "Check-In";
-  font-size: 16px;
+  content: "Learn More";
+  font-size: 14px;
   position: absolute;
   top: 12px;
   left: 25px;
@@ -815,6 +816,8 @@ h3{
   color: transparent;
   transition: 400ms;
   z-index: 2;
+  padding-right: 2px;
+  padding-bottom: 2px;
 }
 
 .checkin-btn:hover::before {  
