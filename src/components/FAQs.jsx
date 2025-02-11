@@ -17,12 +17,13 @@ const FAQ = () => {
     };
 
     return (
-        <motion.div 
-        className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-8 bg-gradient-to-br from-[#0f4e44] to-[#070015] shadow-lg"            initial={{ opacity: 0 }}
+        <motion.div
+            className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-8 bg-gradient-to-br from-[#0f4e44] to-[#070015] shadow-lg" initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
+            id="faqs"
         >
-            <motion.h2 
+            <motion.h2
                 className="text-4xl font-bold text-center mb-8 text-white"
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -32,8 +33,8 @@ const FAQ = () => {
             </motion.h2>
             <div className="space-y-4">
                 {faqs.map((faq, index) => (
-                    <motion.div 
-                        key={index} 
+                    <motion.div
+                        key={index}
                         className="border rounded-lg shadow-md bg-white dark:bg-gray-800"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
