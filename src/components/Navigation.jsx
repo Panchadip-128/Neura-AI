@@ -15,8 +15,8 @@ const variants = {
 const menuItems = [
   { text: "Home", id: "home" },
   { text: "About", id: "about" },
-  { text: "Sponsors", id: "sponsors" },
-  { text: "Events", id: "sigs" },
+  { text: "Upcoming Events", id: "sponsors" },
+  { text: "Previous Events", id: "sigs" },
   { text: "FAQs", id: "faqs" },  // Added FAQs item
   { text: "Contact", id: "contact" } // Added Contact item
 ];
