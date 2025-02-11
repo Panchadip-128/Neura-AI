@@ -39,6 +39,7 @@ const ContactForm = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
+            id="contact"
             className="w-full max-w-3xl mx-auto px-6 lg:px-12 py-8 bg-gradient-to-br from-[#091320] to-[#080d1d] text-white shadow-lg rounded-lg"
         >
             <h2 className="text-3xl font-bold text-center mb-6 text-white">Contact Us</h2>
