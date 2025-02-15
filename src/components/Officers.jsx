@@ -18,52 +18,52 @@ function Officers() {
             bio: "M.S. in AI Systems '26, University of Florida",
         },
         {
-            name: "Alexander Klein",
-            position: "Internal Vice President",
-            linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
-            instagram: "https://www.instagram.com/alexander.klein.cs/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
-            bio: "Incoming Solutions Engineer @ Deloitte, Former Software Engineer Intern @ Akima",
+            name: "Yasaswini Suryadevara",
+            position: "Executive Secretary",
+            linkedin: "https://www.linkedin.com/in/yasaswini-suryadevara-114154159",
+            instagram: "https://www.instagram.com/its._.yasaswini", // Add Instagram link
+            imgSrc: require('../assets/headshots/yasaswini2.png'),
+            bio: "Passionate about fostering AI innovation and education.Enthusiastic, musical, and book-obsessed organizer.",
         },
         {
-            name: "Surya Karthikeyan Vijayalakshmi",
-            position: "External Vice President",
+            name: "Tridib Jena",
+            position: "General Secretary",
             linkedin: "https://www.linkedin.com/in/kvsurya/",
-            instagram: "https://www.instagram.com/kvsurya/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
-            bio: "Director of Web Development @ University of Florida Homecoming and Gator Growl",
+            instagram: "https://www.instagram.com/tridibjena_", // Add Instagram link
+            imgSrc: require('../assets/headshots/Tridib.png'),
+            bio: "Wanna have some refreshments.. ?",
         },
         {
-            name: "Jacob Hoppenstedt",
-            position: "Secretary",
-            linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
-            instagram: "https://www.instagram.com/jacob.hoppenstedt/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
+            name: "Panchadip Bhattacharya",
+            position: "Technical Lead",
+            linkedin: "https://www.linkedin.com/in/panchadip-bhattacharya-192388228/",
+            instagram: "https://www.instagram.com/its_panchadip", // Add Instagram link
+            imgSrc: require('../assets/headshots/PDB2.png'),
             bio: "Former Software Development Engineer Intern @ Publix",
         },
         {
-            name: "Connor Munjed",
-            position: "Treasurer",
+            name: "Dipen Singh",
+            position: "Operations & Logistics Team",
             linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
             instagram: "https://www.instagram.com/connor.munjed/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ FIS Global",
+            imgSrc: require('../assets/headshots/Dipen.png'),
+            bio: "I love future💯",
         },
         {
-            name: "Anteneh Zewdie",
-            position: "Marketing Lead",
-            linkedin: "https://www.linkedin.com/in/antenehzewdie/",
+            name: "Jonath Jimmi",
+            position: "Operations & Logistics Team" ,
+            linkedin: "https://www.linkedin.com/in/jonath-jimmi-41932b302",
             instagram: "https://www.instagram.com/anteneh.zewdie/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Anteneh+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ Prevent Overdose Inc.",
+            imgSrc: require('../assets/headshots/Jonath.png'),
+            bio: "'In the pages of books and the strings of my guitar, I find whispers of the divine—stories, melodies, and miracles intertwined.'",
         },
         {
-            name: "Jack Crew",
-            position: "VP of Professional Affairs",
-            linkedin: "https://www.linkedin.com/in/jack-crew/",
-            instagram: "https://www.instagram.com/jack.crew/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
-            bio: "Former Business Development Intern @ TaskUs",
+            name: "Pranshu Thakkar",
+            position: "Graphics Designer",
+            linkedin: "https://www.linkedin.com/in/pranshu-t-aba933325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "https://www.instagram.com/pranshu._.thakkar?igsh=MTV2NzBrcnQ4YW1ieQ==", // Add Instagram link
+            imgSrc: require('../assets/headshots/Pranshu.png'),
+            bio: "Have edited a book called Vismrit Shaurya & have worked on multiple Graphc Designing projects in various clubs",
         },
         {
             name: "Alexander Fisher",
@@ -140,7 +140,7 @@ function Officers() {
         {
             name: "Samaira Malik",
             position: "Marketing Team",
-            linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            linkedin: "https://in.linkedin.com/in/samaira-malik-a06266264?trk=public_profile_samename-profile",
             instagram: "https://www.instagram.com/samaira.malik/", // Add Instagram link
             imgSrc: require('../assets/headshots/Samaira.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
@@ -165,7 +165,7 @@ function Officers() {
         {
             name: "Livana Datta",
             position: "Operations & Logistics Team",
-            linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            linkedin: "https://in.linkedin.com/in/livana-datta-200452326",
             instagram: "https://www.instagram.com/livana.datta/", // Add Instagram link
             imgSrc: require('../assets/headshots/Livana.jpg'),
             bio: "Former Software Engineer Intern @ DS2",
@@ -176,7 +176,7 @@ function Officers() {
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
             instagram: "https://www.instagram.com/adithi.jahnavi/", // Add Instagram link
             imgSrc: require('../assets/headshots/FullSizeRender - Adithi1.jpg'),
-            bio: "Fun, easygoing coder.  Well-written code fixes everything (except my coffee addiction).",
+            bio: "Fun, easygoing coder.Well-written code fixes everything (except my coffee addiction).",
         },
         {
             name: "Aryan Jha",
