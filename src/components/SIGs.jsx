@@ -2,37 +2,35 @@ import * as React from "react";
 import { motion } from 'framer-motion';
 import ExpandableCard from "./ExpandableCard";
 import { useState, useLayoutEffect, useEffect } from "react";
-import {Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-cards'
+import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-
 
 function SIGs() {
 
     const groups = [
-        { title: "Open Source Club", 
-            text: "We are a community of makers, who want to solve problems and improve our world using open source projects.", 
-            discord: "https://discord.gg/Gsxej6u",
+        { title: "AI For Everyone", 
+            text: "AI For Everyone is an inclusive workshop designed to introduce participants to the fundamentals of Artificial Intelligence (AI).", 
+            instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
             link: "https://ufosc.org/", 
-            imgSrc: require("../assets/osc.png")},
-        { title: "Gator VR", 
-            text: "The Virtual Reality club at the UF. Facilitates student projects and showcases the latest VR technologies.", 
-            discord: "https://discord.gg/AdKKJav",
-            link: "https://linktr.ee/gatorvr", 
-            imgSrc: require("../assets/gatorvr.png") },
-        
-        { title: "Student InfoSec Team", 
-            text: "The Cybersecurity club at the UF. Student-led and passionate about all things cybersecurity.", 
-            discord: "https://discord.gg/H9k5GEStg6",
-            link: "https://ufsit.club/", 
-            imgSrc: require("../assets/ufsit.png") },
-        { title: "Programming Team", 
-            text: "Represents UF in a variety of computer programming contests, under the umbrella of the UF ACM chapter.", 
-            discord: "https://discord.gg/kjpUz5tkZ5",
+            imgSrc: require("../assets/ai_for_every1-removebg-preview.png") },
+        { title: "Industry Conclave", 
+            text: "The Industry Conclave is a premier event organized by the AI Club, bringing together industry leaders, experts, and enthusiasts to discuss the latest advancements in AI.", 
+            instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
+            link: "https://ufosc.org/", 
+            imgSrc: require("../assets/AI_tech_conclave_n-removebg-preview.png") },
+        { title: "Treasure Hunt", 
+            text: "A high-tech adventure that combines the thrill of a treasure hunt with the excitement of technology.",
+            instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
+            link: "https://ufosc.org/", 
+            imgSrc: require("../assets/TreasureHunt-removebg-preview.png") },
+        { title: "Programming CRYPT", 
+            text: "Programming CRYPT represents Cyber fusion enhancing competitive spirit and increasing coding skills", 
+            instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
             link: "", 
-            imgSrc: require("../assets/progteam.png") },
-    ]
+            imgSrc: require("../assets/cyber.png") },
+    ];
 
     const [viewportState, setViewportState] = useState({
         isMobile: window.innerWidth < 872 || window.innerHeight < 800,
@@ -80,7 +78,7 @@ function SIGs() {
                     modules={[EffectCards]}>
                     {groups.map((group, index) => (
                         <SwiperSlide key={index}>
-                            <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link} />
+                            <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} instagram={group.instagram} link={group.link} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -93,7 +91,7 @@ function SIGs() {
                             transform: `scale(${viewportState.scale})`,
                             transformOrigin: 'center',
                         }}>
-                            <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link}/>
+                            <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} instagram={group.instagram} link={group.link}/>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -102,6 +100,4 @@ function SIGs() {
     )
 };
 
-
 export default SIGs;
-

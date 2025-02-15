@@ -1,12 +1,11 @@
 import * as React from "react";
 import { motion } from 'framer-motion';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaDiscord, FaLink  } from "react-icons/fa";
-import { useEffect } from "react";
+import { FaInstagram, FaLink } from "react-icons/fa"; // Import FaInstagram and FaLink
 
 function ExpandableCard(group) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
     const [rotationAngle, setRotationAngle] = useState(0);
 
     const toggleCard = () => {
@@ -17,7 +16,6 @@ function ExpandableCard(group) {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 872 || window.innerHeight < 800);
 
-    
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 872 || window.innerHeight < 800);
@@ -60,8 +58,8 @@ function ExpandableCard(group) {
                     </motion.div>
                 )}
                 <motion.div className="card-links" layout='position'>
-                    <motion.a className='card-link-icon' href={group.discord}>
-                        <FaDiscord style={{fontSize: "23px"}}/>
+                    <motion.a className='card-link-icon' href={group.instagram}>
+                        <FaInstagram style={{fontSize: "23px"}}/>
                     </motion.a>
                     <motion.a className='card-link-icon' href={group.link}>
                         <FaLink />

@@ -78,7 +78,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     placeholder="Your Message"
                     rows="4"
-                    className="w-full p-3 bg-[#fffde1] border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-125 text-gray-900"
+                    className="w-full p-3 bg-[#fffde1] border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-transform transform hover:scale-105 text-gray-900"
                     whileFocus={{ scale: 1.05 }}
                 ></motion.textarea>
                 <motion.button

@@ -103,7 +103,7 @@ function Officers() {
             linkedin: "https://www.linkedin.com/in/jasontenczar/",
             instagram: "https://www.instagram.com/tanay.sanjay/", // Add Instagram link
             imgSrc: require('../assets/headshots/Tsm (2).jpg'),
-            bio: "Former Software Engineer Intern @ Integris Group",
+            bio: "Passionate about videography and editing—I make clips cool, question my life choices, and rewatch footage endlessly until it 'feels right.'",
         },
         {
             name: "Arnav Agarwal",
@@ -175,8 +175,8 @@ function Officers() {
             position: "Web Development Team",
             linkedin: "https://www.linkedin.com/in/newbold-kevin/",
             instagram: "https://www.instagram.com/adithi.jahnavi/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Adithi.jpg'),
-            bio: "Former Software Engineer Intern @ DS2",
+            imgSrc: require('../assets/headshots/FullSizeRender - Adithi1.jpg'),
+            bio: "Fun, easygoing coder.  Well-written code fixes everything (except my coffee addiction).",
         },
         {
             name: "Aryan Jha",

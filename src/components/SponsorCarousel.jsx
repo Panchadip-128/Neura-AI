@@ -2,23 +2,21 @@ import * as React from "react";
 
 function SponsorCarousel() {
     const sponsors = [
-        { text: "Roblox", link: "https://www.roblox.com", imgSrc: require("../assets/roblox.png")},
-        { text: "Bloomberg", link: "https://www.bloomberg.com", imgSrc: require("../assets/bloom.png") },
-        { text: "Centene", link: "https://www.centene.com", imgSrc: require("../assets/centene.png") },
-        { text: "Meta", link: "https://www.meta.com", imgSrc: require("../assets/meta.png") },
-        { text: "Accenture", link: "https://www.accenture.com/us-en", imgSrc: require("../assets/accenture.png") },
-        { text: "Grove Street Games", link: "https://www.grovestreetgames.com", imgSrc: require("../assets/grove.png") },
-        { text: "Whatnot", link: "https://www.whatnot.com", imgSrc: require("../assets/whatnot.png") },
-        { text: "XRP Ledger", link: "https://www.xrpl.org", imgSrc: require("../assets/xrp.png") },
+        { text: "ANN", link: "#", imgSrc: require("../assets/UEV_ANN1.png")},
+        { text: "UEV2", link: "#", imgSrc: require("../assets/UEV_2.png") },
+        { text: "AI_uev", link: "#", imgSrc: require("../assets/AI_uev.png") },
+        { text: "AI_TH", link: "#", imgSrc: require("../assets/th_uev.jpg") },
+        { text: "AI_movie", link: "#", imgSrc: require("../assets/AI_movie1.png") },
+        { text: "AI_tech", link: "#", imgSrc: require("../assets/AI_tech.png") },
+       
 
-        { text: "Roblox", link: "https://www.roblox.com", imgSrc: require("../assets/roblox.png")},
-        { text: "Bloomberg", link: "https://www.bloomberg.com", imgSrc: require("../assets/bloom.png") },
-        { text: "Centene", link: "https://www.centene.com", imgSrc: require("../assets/centene.png") },
-        { text: "Meta", link: "https://www.meta.com", imgSrc: require("../assets/meta.png") },
-        { text: "Accenture", link: "https://www.accenture.com/us-en", imgSrc: require("../assets/accenture.png") },
-        { text: "Grove Street Games", link: "https://www.grovestreetgames.com", imgSrc: require("../assets/grove.png") },
-        { text: "Whatnot", link: "https://www.whatnot.com", imgSrc: require("../assets/whatnot.png") },
-        { text: "XRP Ledger", link: "https://www.xrpl.org", imgSrc: require("../assets/xrp.png") },
+        { text: "ANN", link: "#", imgSrc: require("../assets/UEV_ANN1.png")},
+        { text: "UEV2", link: "#", imgSrc: require("../assets/UEV_2.png") },
+        { text: "AI_uev", link: "#", imgSrc: require("../assets/AI_uev.png") },
+        { text: "AI_TH", link: "#", imgSrc: require("../assets/th_uev.jpg") },
+        { text: "AI_movie", link: "#", imgSrc: require("../assets/AI_movie1.png") },
+        { text: "AI_tech", link: "#", imgSrc: require("../assets/AI_tech.png") },
+        
     ];
 
     return (
