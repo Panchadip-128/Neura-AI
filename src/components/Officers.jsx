@@ -82,20 +82,20 @@ function Officers() {
             bio: "Former Software Engineer Intern @ Lockheed Martin Aeronautics",
         },
         {
-            name: "Diego Alvarez d Jesus",
-            position: "Social Lead",
-            linkedin: "https://www.linkedin.com/in/dalvarezdejesus/",
-            instagram: "https://www.instagram.com/diego.alvarez.de.jesus/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Diego+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ Northrop Grumman",
+            name: "Prajwal Pandey",
+            position: "AI Specialist",
+            linkedin: "http://www.linkedin.com/in/prajwal-pandey14",
+            instagram: "https://www.instagram.com/prajwal_x8c/", // Add Instagram link
+            imgSrc: require('../assets/headshots/Prajwal.png'),
+            bio: "Interested in AI/ML, with emphasis on NLP. Also very interested in psychology, writing, and acting. ",
         },
         {
             name: "Rashi Goyal",
             position: "Operations & Logistics Head",
-            linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            linkedin: "https://www.linkedin.com/in/rashi-goyal-1801a6314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             instagram: "https://www.instagram.com/rashi.goyal/", // Add Instagram link
             imgSrc: require('../assets/headshots/RashiG_Neura.png'),
-            bio: "Former Software Engineer Intern @ DS2",
+            bio: "Always up for new experiences!",
         },
         {
             name: "Tanay Sanjay",
