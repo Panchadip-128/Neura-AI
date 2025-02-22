@@ -23,7 +23,7 @@ function SIGs() {
         { title: "Treasure Hunt", 
             text: "A high-tech adventure that combines the thrill of a treasure hunt with the excitement of technology.",
             instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
-            link: "https://ufosc.org/", 
+            link: "#", 
             imgSrc: require("../assets/TreasureHunt-removebg-preview.png") },
         { title: "Programming CRYPT", 
             text: "Programming CRYPT represents Cyber fusion enhancing competitive spirit and increasing coding skills", 
