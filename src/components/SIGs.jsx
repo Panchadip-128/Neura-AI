@@ -13,12 +13,12 @@ function SIGs() {
         { title: "AI For Everyone", 
             text: "AI For Everyone is an inclusive workshop designed to introduce participants to the fundamentals of Artificial Intelligence (AI).", 
             instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
-            link: "https://ufosc.org/", 
+            link: "#", 
             imgSrc: require("../assets/ai_for_every1-removebg-preview.png") },
         { title: "Industry Conclave", 
             text: "The Industry Conclave is a premier event organized by the AI Club, bringing together industry leaders, experts, and enthusiasts to discuss the latest advancements in AI.", 
             instagram: "https://www.instagram.com/your_instagram_link", // Replace with actual Instagram link
-            link: "https://ufosc.org/", 
+            link: "#", 
             imgSrc: require("../assets/AI_tech_conclave_n-removebg-preview.png") },
         { title: "Treasure Hunt", 
             text: "A high-tech adventure that combines the thrill of a treasure hunt with the excitement of technology.",

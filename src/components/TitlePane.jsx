@@ -50,7 +50,7 @@ const TitlePane = () => {
         </motion.p>
         <div className='flex disc-container'>
           <div className='items-center'>
-            <a href="https://mbosc-takshakala2025.vercel.app/" className='discord-btn'></a>
+            <a href="https://event-page2-its5.vercel.app" className='discord-btn'></a>
           </div>
           <div className='items-center'>
             <a href={researchTopics} className='checkin-btn' download target="_blank" rel="noopener noreferrer">
