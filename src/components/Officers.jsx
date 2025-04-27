@@ -9,14 +9,7 @@ import 'swiper/css/pagination';
 
 function Officers() {
     const officers = [
-        {
-            name: "Norman Bukingolts",
-            position: "President",
-            linkedin: "https://www.linkedin.com/in/norman-codes/",
-            instagram: "https://www.instagram.com/neura.mitblr/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
-            bio: "M.S. in AI Systems '26, University of Florida",
-        },
+        
         {
             name: "Yasaswini Suryadevara",
             position: "Executive Secretary",
