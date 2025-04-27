@@ -32,7 +32,7 @@ function Officers() {
             linkedin: "https://www.linkedin.com/in/panchadip-bhattacharya-192388228/",
             instagram: "https://www.instagram.com/its_panchadip", // Add Instagram link
             imgSrc: require('../assets/headshots/PDB2.png'),
-            bio: "Former Software Development Engineer Intern @ Publix",
+            bio: "Beyond algorithms and innovation, From neural networks to real-world impact, I speak fluent AI",
         },
         {
             name: "Dipen Singh",
