@@ -58,22 +58,8 @@ function Officers() {
             imgSrc: require('../assets/headshots/Pranshu.png'),
             bio: "Have edited a book called Vismrit Shaurya & have worked on multiple Graphc Designing projects in various clubs",
         },
-        {
-            name: "Alexander Fisher",
-            position: "Workshop Lead",
-            linkedin: "https://www.linkedin.com/in/alexander-fisher-00209828a/",
-            instagram: "https://www.instagram.com/alexander.fisher/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Fisher+Headshot.jpg'),
-            bio: "Incoming Software Engineer Intern @ BNY",
-        },
-        {
-            name: "Kovidh Gandreti",
-            position: "Workshop Lead",
-            linkedin: "https://www.linkedin.com/in/kovidhgandreti/",
-            instagram: "https://www.instagram.com/kovidh.gandreti/", // Add Instagram link
-            imgSrc: require('../assets/headshots/Kovidh+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ Lockheed Martin Aeronautics",
-        },
+        
+        
         {
             name: "Prajwal Pandey",
             position: "AI Specialist",
