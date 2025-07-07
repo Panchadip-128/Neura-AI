@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import About from './components/About';
 import SponsorCarousel from './components/SponsorCarousel';
+import Gallery from "./components/Gallery"
 import SIGs from './components/SIGs';
 import Footer from './components/Footer';
 import Officers from './components/Officers';
@@ -56,6 +57,9 @@ function Landing() {
             <Officers />
             <h1 id='sponsors' className='text-center p-4'>Upcoming Events</h1>
             <SponsorCarousel id='sponsors' />
+
+            <h1 id='gallery' className='text-center p-4'>Gallery</h1>
+            <Gallery id='gallery' />
             <SIGs id='sigs' />
 
             <Projects />
