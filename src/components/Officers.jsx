@@ -35,6 +35,14 @@ function Officers() {
             bio: "Beyond algorithms and innovation, From neural networks to real-world impact, I speak fluent AI",
         },
         {
+            name: "Saaheer Purav",
+            position: "Web Development Team",
+            linkedin: "https://www.linkedin.com/in/saaheer-purav",
+            instagram: "https://www.instagram.com/saaheerpurav", // Add Instagram link
+            imgSrc: require('../assets/headshots/Saaheer.jpg'),
+            bio: "Full Stack Developer",
+        },
+        {
             name: "Dipen Singh",
             position: "Operations & Logistics Team",
             linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
