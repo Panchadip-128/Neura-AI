@@ -2,18 +2,12 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import img1 from "../assets/pics/IMG-20250405-WA0081.jpg";
 import img2 from "../assets/pics/IMG-20250405-WA0087.jpg";
-import img3 from "../assets/pics/IMG-20250405-WA0033.jpg";
-import img4 from "../assets/pics/IMG-20250405-WA0010.jpg";
-import img5 from "../assets/pics/IMG-20250405-WA0014.jpg";
-import img6 from "../assets/pics/IMG-20250405-WA0027.jpg";
+import img3 from "../assets/pics/IMG-20250405-WA0088.jpg";
 
 const imgs = [
   img1,
   img2,
   img3,
-  img4,
-  img5,
-  img6,
 ];
 
 const ONE_SECOND = 1000;
