@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import img1 from "../assets/pics/IMG-20250405-WA0081.jpg";
-import img2 from "../assets/pics/IMG-20250405-WA0087.jpg";
-import img3 from "../assets/pics/IMG-20250405-WA0088.jpg";
+import img2 from "../assets/pics/IMG-20250405-WA0009.jpg";
+import img3 from "../assets/pics/IMG-20250405-WA0023.jpg";
 
 const imgs = [
   img1,
